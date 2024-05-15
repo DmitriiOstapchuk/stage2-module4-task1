@@ -69,36 +69,36 @@ public class Employee {
     }
 
     public static class EmployeeBuilder {
-        private String name;
-        private String lastName;
-        private String position;
-        private String phone;
-        private String email;
-        private String carNumber;
+        private String name = null;
+        private String lastName = null;
+        private String position = null;
+        private String phone = null;
+        private String email = null;
+        private String carNumber = null;
         public EmployeeBuilder setName (String name) {
-            this.setName(name);
+            this.name = name;
             return this;
         }
 
         public EmployeeBuilder setPosition (String position) {
-            this.setPosition(position);
+            this.position = position;
             return this;
         }
 
         public EmployeeBuilder setLastName (String lastName) {
-            this.setLastName(lastName);
+            this.lastName = lastName;
             return this;
         }
         public EmployeeBuilder setPhone (String phone) {
-            this.setPhone(phone);
+            this.phone = phone;
             return this;
         }
         public EmployeeBuilder setEmail (String email) {
-            this.setEmail(email);
+            this.email = email;
             return this;
         }
         public EmployeeBuilder setCarNumber (String carNumber) {
-            this.setCarNumber(carNumber);
+            this.carNumber = carNumber;
             return this;
         }
 
