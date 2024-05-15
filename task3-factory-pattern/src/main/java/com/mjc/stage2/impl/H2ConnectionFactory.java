@@ -12,7 +12,7 @@ public class H2ConnectionFactory implements ConnectionFactory {
     public Connection createConnection() {
         try {
             ResourceBundle bundle = ResourceBundle.getBundle("h2database");
-            Class.forName("jdbc_driver");
+            Class.forName(bundle.getString("jdbc_driver"));
             String url = bundle.getString("db_url");
             String user = bundle.getString("user");
             String password = bundle.getString("password");
